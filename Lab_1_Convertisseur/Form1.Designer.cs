@@ -40,26 +40,25 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textDecimale = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.txtDecimale = new System.Windows.Forms.TextBox();
+            this.btnEffacer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDecimale
             // 
             this.btnDecimale.Location = new System.Drawing.Point(50, 272);
-            this.btnDecimale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDecimale.Margin = new System.Windows.Forms.Padding(2);
             this.btnDecimale.Name = "btnDecimale";
             this.btnDecimale.Size = new System.Drawing.Size(82, 32);
             this.btnDecimale.TabIndex = 0;
             this.btnDecimale.Text = "Décimale";
             this.btnDecimale.UseVisualStyleBackColor = true;
+            this.btnDecimale.Click += new System.EventHandler(this.btnDecimale_Click);
             // 
             // btnBinaire
             // 
-            this.btnBinaire.Location = new System.Drawing.Point(234, 272);
-            this.btnBinaire.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBinaire.Location = new System.Drawing.Point(172, 272);
+            this.btnBinaire.Margin = new System.Windows.Forms.Padding(2);
             this.btnBinaire.Name = "btnBinaire";
             this.btnBinaire.Size = new System.Drawing.Size(82, 32);
             this.btnBinaire.TabIndex = 1;
@@ -69,18 +68,19 @@
             // 
             // btnHexa
             // 
-            this.btnHexa.Location = new System.Drawing.Point(440, 272);
-            this.btnHexa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHexa.Location = new System.Drawing.Point(304, 272);
+            this.btnHexa.Margin = new System.Windows.Forms.Padding(2);
             this.btnHexa.Name = "btnHexa";
             this.btnHexa.Size = new System.Drawing.Size(82, 32);
             this.btnHexa.TabIndex = 2;
             this.btnHexa.Text = "Hexadécimale";
             this.btnHexa.UseVisualStyleBackColor = true;
+            this.btnHexa.Click += new System.EventHandler(this.btnHexa_Click);
             // 
             // txtChiffre
             // 
             this.txtChiffre.Location = new System.Drawing.Point(198, 214);
-            this.txtChiffre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtChiffre.Margin = new System.Windows.Forms.Padding(2);
             this.txtChiffre.Name = "txtChiffre";
             this.txtChiffre.Size = new System.Drawing.Size(171, 20);
             this.txtChiffre.TabIndex = 3;
@@ -88,7 +88,7 @@
             // txtBinaire
             // 
             this.txtBinaire.Location = new System.Drawing.Point(235, 123);
-            this.txtBinaire.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBinaire.Margin = new System.Windows.Forms.Padding(2);
             this.txtBinaire.Name = "txtBinaire";
             this.txtBinaire.ReadOnly = true;
             this.txtBinaire.Size = new System.Drawing.Size(92, 20);
@@ -130,7 +130,7 @@
             // txtHexadecimale
             // 
             this.txtHexadecimale.Location = new System.Drawing.Point(430, 123);
-            this.txtHexadecimale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtHexadecimale.Margin = new System.Windows.Forms.Padding(2);
             this.txtHexadecimale.Name = "txtHexadecimale";
             this.txtHexadecimale.ReadOnly = true;
             this.txtHexadecimale.Size = new System.Drawing.Size(92, 20);
@@ -166,51 +166,32 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Binaire :";
             // 
-            // textDecimale
+            // txtDecimale
             // 
-            this.textDecimale.Location = new System.Drawing.Point(69, 123);
-            this.textDecimale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textDecimale.Name = "textDecimale";
-            this.textDecimale.ReadOnly = true;
-            this.textDecimale.Size = new System.Drawing.Size(92, 20);
-            this.textDecimale.TabIndex = 12;
+            this.txtDecimale.Location = new System.Drawing.Point(69, 123);
+            this.txtDecimale.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDecimale.Name = "txtDecimale";
+            this.txtDecimale.ReadOnly = true;
+            this.txtDecimale.Size = new System.Drawing.Size(92, 20);
+            this.txtDecimale.TabIndex = 12;
             // 
-            // button1
+            // btnEffacer
             // 
-            this.button1.Location = new System.Drawing.Point(444, 65);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "bhay";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(430, 211);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "bha";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(259, 172);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "bha";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEffacer.Location = new System.Drawing.Point(440, 272);
+            this.btnEffacer.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEffacer.Name = "btnEffacer";
+            this.btnEffacer.Size = new System.Drawing.Size(82, 32);
+            this.btnEffacer.TabIndex = 13;
+            this.btnEffacer.Text = "effacer";
+            this.btnEffacer.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(593, 366);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textDecimale);
+            this.Controls.Add(this.btnEffacer);
+            this.Controls.Add(this.txtDecimale);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -223,7 +204,7 @@
             this.Controls.Add(this.btnHexa);
             this.Controls.Add(this.btnBinaire);
             this.Controls.Add(this.btnDecimale);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Lab1_Convertisseur";
             this.ResumeLayout(false);
@@ -245,10 +226,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textDecimale;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtDecimale;
+        private System.Windows.Forms.Button btnEffacer;
     }
 }
 
